@@ -19,19 +19,19 @@
 			enumerable: false
 		});
 	}
-	var _b8b7 = {};
-	_b8b7.f = {};
+	var _9147 = {};
+	_9147.f = {};
 	// cached modules
-	_b8b7.m = {};
-	_b8b7.r = function(id) {
-		var cached = _b8b7.m[id];
+	_9147.m = {};
+	_9147.r = function(id) {
+		var cached = _9147.m[id];
 		// resolve if in cache
 		if (cached) {
 			return cached.m.exports;
 		}
-		var file = _b8b7.f[id];
+		var file = _9147.f[id];
 		if (!file) return;
-		cached = _b8b7.m[id] = {};
+		cached = _9147.m[id] = {};
 		cached.exports = {};
 		cached.m = { exports: cached.exports };
 		file.call(cached.exports, cached.m, cached.exports);
@@ -39,18 +39,18 @@
 		return cached.m.exports;
 	};
 // vue-golden-layout/index.js
-_b8b7.f[0] = function(module,exports){
+_9147.f[0] = function(module,exports){
 Object.defineProperty(exports, '__esModule', { value: true });
 require('golden-layout/src/css/goldenlayout-base.css');
-var golden_vue_1 = _b8b7.r(1);
+var golden_vue_1 = _9147.r(1);
 exports.layoutGolden = golden_vue_1.default;
-var gl_component_vue_1 = _b8b7.r(4);
+var gl_component_vue_1 = _9147.r(4);
 exports.glComponent = gl_component_vue_1.default;
-var gl_group_1 = _b8b7.r(5);
+var gl_group_1 = _9147.r(5);
 exports.glRow = gl_group_1.glRow;
 exports.glCol = gl_group_1.glCol;
 exports.glStack = gl_group_1.glStack;
-var router_vue_1 = _b8b7.r(7);
+var router_vue_1 = _9147.r(7);
 exports.goldenRouter = router_vue_1.default;
 var components = {
     layoutGolden: golden_vue_1.default,
@@ -68,7 +68,7 @@ exports.default = {
 };
 }
 // vue-golden-layout/golden.vue
-_b8b7.f[1] = function(module,exports){
+_9147.f[1] = function(module,exports){
 var _options = { _vueModuleId: 'data-v-dfba06a5' };
 Object.assign(_options, {
     _scopeId: null,
@@ -119,10 +119,10 @@ var __metadata = this && this.__metadata || function (k, v) {
         return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, '__esModule', { value: true });
-var imports_1 = _b8b7.r(2);
+var imports_1 = _9147.r(2);
 var vue_property_decorator_1 = require('vue-property-decorator');
 var GoldenLayout = require('golden-layout');
-var gl_roles_1 = _b8b7.r(3);
+var gl_roles_1 = _9147.r(3);
 var resize = require('vue-resize-directive');
 var layoutGolden = function (_super) {
     __extends(layoutGolden, _super);
@@ -379,13 +379,13 @@ function forwardEvt(from, toward, events) {
 Object.assign(exports.default.options || exports.default, _options);
 }
 // vue-golden-layout/imports.js
-_b8b7.f[2] = function(module,exports){
+_9147.f[2] = function(module,exports){
 Object.defineProperty(exports, '__esModule', { value: true });
 var vue = require('vue');
 exports.Vue = vue.default || vue;
 }
 // vue-golden-layout/gl-roles.js
-_b8b7.f[3] = function(module,exports){
+_9147.f[3] = function(module,exports){
 var __extends = this && this.__extends || function () {
     var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (d, b) {
         d.__proto__ = b;
@@ -426,7 +426,7 @@ var __metadata = this && this.__metadata || function (k, v) {
         return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, '__esModule', { value: true });
-var imports_1 = _b8b7.r(2);
+var imports_1 = _9147.r(2);
 var vue_property_decorator_1 = require('vue-property-decorator');
 var goldenContainer = function (_super) {
     __extends(goldenContainer, _super);
@@ -538,7 +538,6 @@ var goldenChild = function (_super) {
         this.$parent.addGlChild(__assign({}, dimensions, this.childConfig), this, this.$parent.$children.indexOf(this));
     };
     goldenChild.prototype.beforeDestroy = function () {
-        this.$parent.removeGlChild(this.$parent.$children.indexOf(this));
     };
     __decorate([
         vue_property_decorator_1.Prop(),
@@ -585,7 +584,7 @@ var goldenChild = function (_super) {
 exports.goldenChild = goldenChild;
 }
 // vue-golden-layout/gl-component.vue
-_b8b7.f[4] = function(module,exports){
+_9147.f[4] = function(module,exports){
 var _options = { _vueModuleId: 'data-v-51b7c287' };
 Object.assign(_options, {
     _scopeId: null,
@@ -632,7 +631,7 @@ var __metadata = this && this.__metadata || function (k, v) {
 };
 Object.defineProperty(exports, '__esModule', { value: true });
 var vue_property_decorator_1 = require('vue-property-decorator');
-var gl_roles_1 = _b8b7.r(3);
+var gl_roles_1 = _9147.r(3);
 var glComponent = function (_super) {
     __extends(glComponent, _super);
     function glComponent() {
@@ -688,10 +687,10 @@ var glComponent = function (_super) {
 }(gl_roles_1.goldenChild);
 exports.default = glComponent;
 Object.assign(exports.default.options || exports.default, _options);
-_b8b7.r(8)('vue-golden-layout/gl-component.vue.css', '\n.glComponent {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: auto;\n}\n');
+_9147.r(8)('vue-golden-layout/gl-component.vue.css', '\n.glComponent {\n\twidth: 100%;\n\theight: 100%;\n\toverflow: auto;\n}\n');
 }
 // vue-golden-layout/gl-group.js
-_b8b7.f[5] = function(module,exports){
+_9147.f[5] = function(module,exports){
 var __extends = this && this.__extends || function () {
     var extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function (d, b) {
         d.__proto__ = b;
@@ -733,7 +732,7 @@ var __metadata = this && this.__metadata || function (k, v) {
 };
 Object.defineProperty(exports, '__esModule', { value: true });
 var vue_property_decorator_1 = require('vue-property-decorator');
-var gl_group_vue_1 = _b8b7.r(6);
+var gl_group_vue_1 = _9147.r(6);
 var glGroup = function (_super) {
     __extends(glGroup, _super);
     function glGroup() {
@@ -840,7 +839,7 @@ var glStack = function (_super) {
 exports.glStack = glStack;
 }
 // vue-golden-layout/gl-group.vue
-_b8b7.f[6] = function(module,exports){
+_9147.f[6] = function(module,exports){
 var _options = { _vueModuleId: 'data-v-b4612357' };
 Object.assign(_options, {
     _scopeId: null,
@@ -884,7 +883,7 @@ var __metadata = this && this.__metadata || function (k, v) {
 };
 Object.defineProperty(exports, '__esModule', { value: true });
 var vue_property_decorator_1 = require('vue-property-decorator');
-var gl_roles_1 = _b8b7.r(3);
+var gl_roles_1 = _9147.r(3);
 var glGroup = function (_super) {
     __extends(glGroup, _super);
     function glGroup() {
@@ -911,7 +910,7 @@ exports.default = glGroup;
 Object.assign(exports.default.options || exports.default, _options);
 }
 // vue-golden-layout/router.vue
-_b8b7.f[7] = function(module,exports){
+_9147.f[7] = function(module,exports){
 var _options = { _vueModuleId: 'data-v-c1be1ce5' };
 Object.assign(_options, {
     _scopeId: null,
@@ -962,10 +961,10 @@ var __metadata = this && this.__metadata || function (k, v) {
         return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, '__esModule', { value: true });
-var golden_vue_1 = _b8b7.r(1);
-var imports_1 = _b8b7.r(2);
+var golden_vue_1 = _9147.r(1);
+var imports_1 = _9147.r(2);
 var vue_property_decorator_1 = require('vue-property-decorator');
-var gl_group_1 = _b8b7.r(5);
+var gl_group_1 = _9147.r(5);
 function defaultTitle(route) {
     return route.meta && route.meta.title || 'set $route.meta.title';
 }
@@ -1089,10 +1088,10 @@ var router = function (_super) {
 }(imports_1.Vue);
 exports.default = router;
 Object.assign(exports.default.options || exports.default, _options);
-_b8b7.r(8)('vue-golden-layout/router.vue.css', '\n.golden-router .lm_content {\n\toverflow-y: auto;\n}\n');
+_9147.r(8)('vue-golden-layout/router.vue.css', '\n.golden-router .lm_content {\n\toverflow-y: auto;\n}\n');
 }
 // fuse-box-css/index.js
-_b8b7.f[8] = function(module,exports){
+_9147.f[8] = function(module,exports){
 var __filename = "index.js";
 var runningInBrowser = false || 'npm' === 'electron';
 var cssHandler = function (__filename, contents) {
@@ -1130,7 +1129,7 @@ if (typeof FuseBox !== 'undefined' && runningInBrowser) {
 module.exports = cssHandler;
 }
 // tslib/tslib.js
-_b8b7.f[9] = function(module,exports){
+_9147.f[9] = function(module,exports){
 var __extends;
 var __assign;
 var __rest;
@@ -1523,4 +1522,4 @@ var __importDefault;
     exporter('__importDefault', __importDefault);
 }));
 }
-module.exports = _b8b7.r(0)
+module.exports = _9147.r(0)

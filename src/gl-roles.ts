@@ -78,7 +78,7 @@ export class goldenChild extends Vue {
 		this.$parent.addGlChild({...dimensions, ...this.childConfig}, this, this.$parent.$children.indexOf(this));
 	}
 	beforeDestroy() {
-		this.$parent.removeGlChild(this.$parent.$children.indexOf(this));
+		// this.$parent.removeGlChild(this.$parent.$children.indexOf(this));
 	}
 	events: string[] = ['show', 'shown', 'maximised', 'minimised', 'resize', 'hide', 'close', 'open', 'destroy']
 }
